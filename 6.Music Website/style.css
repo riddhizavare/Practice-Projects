@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin: 50px;
+  }
+button{
+    padding: 10px 5px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+/* Navbar */
+nav{
+    background-color: var(--purple300);
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.navbar-toggler{
+    background-color: white;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+
+}
+
+/* hero */
+.hero_section{
+    background-image: url(./images/hero_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+.hero_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero_section h1{
+    font-size: 96px;
+}
+.hero_section h3{
+    font-size: 30px;
+}
+.hero_section h4{
+    font-size: 25px;
+    text-align: center;
+}
+/* music */
+.music_section{
+    background-color: var(--purple500);
+
+}
+.music_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ipad_image{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+
+.btn1{
+    background-color: var(--red600);
+    color: white;
+}
+.btn2{
+    background-color: var(--purple300);
+  color: white;
+}
+/* about */
+.about_music .container{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50;
+    text-align: center;
+    margin-bottom: 45px;
+}
+/* video */
+.video_section{
+    background-image: url(./images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+.video_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+.hero-section,
+.video-section {
+  position: relative;
+  background-position: center;
+}
+/* Footer */
+.f1{
+    background-color: var(--purple600);
+  padding: 20px;
+  color: white;
+}
+
+.f1 h5{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    
+}
+.f1 ul{
+    list-style: none;
+    margin-left: -30px;
+}
+footer{
+    background-color: var(--purple300);
+    color: white;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
